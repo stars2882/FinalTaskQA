@@ -55,6 +55,7 @@ public class BbcSport extends BasePage {
         WebElement checkScore1 = DriverManager.getDriver().findElement(By.xpath("//div[contains(@class,'header--football')]//span[contains(text(),'" + team1 + "')]|span[(text() ='" + scoreTeam1 + "')]"));
         WebElement checkScore2 = DriverManager.getDriver().findElement(By.xpath("//div[contains(@class,'header--football')]//span[contains(text(),'" + team2 + "')]|span[(text() ='" + scoreTeam2 + "')]"));
         if (checkScore1.isDisplayed() & checkScore2.isDisplayed()) {
+
             result = true;
         }
         return result;
