@@ -12,6 +12,7 @@ public class BbcQuestion extends BasePage{
 
     @FindBy(xpath = "//input[@aria-label='Name']")
     private WebElement fieldName;
+
     @FindBy(xpath = "//input[@aria-label='Email address']")
     private WebElement fieldEmail;
     @FindBy(xpath = "//input[@aria-label='Contact number']")

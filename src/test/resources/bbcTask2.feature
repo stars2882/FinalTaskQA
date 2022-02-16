@@ -12,6 +12,7 @@ Feature: Smoke Tests from the final task
     And Checking '<team1>' and '<team2>' names and scores '<scoreTeam1>' : '<scoreTeam2>' at the center of the screen
 
 
+
     Examples:
       | homePage             | button | championship             | day    | team1               | team2           | scoreTeam1 | scoreTeam2 |
       | https://www.bbc.com/ | sport  | Champions League         | 15 FEB | Paris Saint Germain | Real Madrid     | 1          | 0          |

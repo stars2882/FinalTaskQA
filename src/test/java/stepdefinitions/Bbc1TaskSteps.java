@@ -14,7 +14,6 @@ public class Bbc1TaskSteps {
     public void userOpensHomePageBBC(final String keyword) {
         BBC_1_PAGE.openHomePage(keyword);
         BBC_1_PAGE.waitForPageLoadComplete(60);
-
     }
 
     @Then("User click button {string} navigation bar")

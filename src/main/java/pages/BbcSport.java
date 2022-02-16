@@ -9,7 +9,6 @@ import org.openqa.selenium.support.FindBy;
 public class BbcSport extends BasePage {
 
 
-
     @FindBy(xpath = "//li[contains(@class,'sport-navigation')]//a[contains(@href,'football')]")
     private WebElement buttonSectionFootball;
 

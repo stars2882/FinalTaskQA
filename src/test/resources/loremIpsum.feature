@@ -5,6 +5,7 @@ Feature: Smoke Tests from the final task
     And User click link Russian Language
     Then Verify the text of the first  element, which is the first paragraph, contains the word '<word>'
 
+
     Examples:
       | homePage                | word |
       | https://www.lipsum.com/ | рыба |

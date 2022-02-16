@@ -19,7 +19,6 @@ public class LoremIpsumSteps {
         LOREM_IPSUM_PAGE.clickRussianLanguage();
     }
 
-
     @Then("Verify the text of the first  element, which is the first paragraph, contains the word {string}")
     public void verifyTheTextOfTheFirstElementWhichIsTheFirstParagraphContainsTheWordWord(final String keyword) {
         Assert.assertTrue(LOREM_IPSUM_PAGE.checkSearchWordOnPage(keyword));

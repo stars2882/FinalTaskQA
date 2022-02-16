@@ -6,6 +6,7 @@ Feature: Smoke Tests from the final task
     And User click button '<button>' navigation bar
     Then Checks the name of the headline article in condition '<condition>'
 
+
     Examples:
       | homePage             | button | condition                                        |
       | https://www.bbc.com/ | news   | Nadal makes history with 21st Grand Slam victory |
@@ -37,13 +38,11 @@ Feature: Smoke Tests from the final task
     And Click tab Your Coronavirus Stories
     And Click link Your questions answered: What questions do you have?
     And Scrolling to form ask your question
-    And Input fields form question '<question>' and '<name>' and  '<email>' and '<phone>' and '<location>' and '<age>'
+    And Input fields form question '<name>' and  '<email>' and '<phone>' and '<location>' and '<age>'
     And Click button Submit
     Then Checking the form submission for an error
 
-
     Examples:
-      | homePage             | button | subtitle    | question    | name  | email   | phone  | location | age    |
-      | https://www.bbc.com/ | news   | coronavirus | How do you? | Boss  | 1       | null   | 1212     | second |
-      | https://www.bbc.com/ | news   | coronavirus |             |       | 1@1.com | number | Moon     | 2022   |
-      | https://www.bbc.com/ | news   | coronavirus |             | Bruce |         | 010101 |          | 200    |
+      | homePage             | button | subtitle    | name | email   | phone  | location | age    |
+      | https://www.bbc.com/ | news   | coronavirus | Boss |         | null   | 1212     | second |
+#      | https://www.bbc.com/ | news   | coronavirus |      | 1@1.com | number | Moon     | 2022   |

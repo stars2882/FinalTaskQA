@@ -15,6 +15,7 @@ public class Bbc2TaskSteps {
         BBC_SPORT.clickButtonSectionFootball();
     }
 
+
     @And("Search for a championship {string}")
     public void searchForAChampionshipChampionship(final String keyword) {
         BBC_SPORT.searchChampionship(keyword);

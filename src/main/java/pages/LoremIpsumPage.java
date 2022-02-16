@@ -11,7 +11,6 @@ import java.util.List;
 
 public class LoremIpsumPage extends BasePage {
 
-
     public void openPageSite(final String url) {
         DriverManager.getDriver().get(url);
     }

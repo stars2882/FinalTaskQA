@@ -18,6 +18,7 @@ public class BbcPage extends BasePage {
     @FindBy(xpath = "//div[@id='orb-nav-links']//a[contains(@href,'news')]")
     private WebElement barMenu;
 
+
     public void clickOnNavigationButtons(final String keyword) {
         waitVisibilityOfElement(120, barMenu);
         WebElement button = DriverManager.getDriver().findElement(By.xpath("//div[@id='orb-nav-links']//a[contains(@href,'" + keyword + "')]"));

@@ -10,7 +10,6 @@ public class BbcNews extends BasePage {
     WebElement searchFiled;
 
     String link;
-
     public void storesLinkHeadLineNews(final String keyword) {
         WebElement headLineNews = DriverManager.getDriver().findElement(By.xpath("//nav[@class='nw-c-nav__wide']//span[contains(text(),'" + keyword + "')]"));
         link = headLineNews.getAttribute("href");
